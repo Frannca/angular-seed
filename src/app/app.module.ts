@@ -7,7 +7,7 @@ import { HttpErrorHandler } from './shared/services/http-error-handler.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
