@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpErrorHandler } from './shared/services/http-error-handler.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,7 @@ import { HttpErrorHandler } from './shared/services/http-error-handler.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [HttpErrorHandler],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

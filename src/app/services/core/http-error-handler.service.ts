@@ -1,5 +1,5 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
 
 import {
   Observable,
@@ -9,8 +9,10 @@ import {
 export type HandleError =
   <T> (operation?: string, result?: T) => (error: HttpErrorResponse) => Observable<T>;
 
-@Injectable()
-export class HttpErrorHandler {
+@Injectable({
+  providedIn: 'root'
+})
+export class HttpErrorHandlerService {
 
   public errors: any;
 

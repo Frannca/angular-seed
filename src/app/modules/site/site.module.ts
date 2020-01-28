@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SiteRoutingModule } from './site-routing.module';
-import { TemplateComponent } from './template.component';
-
+import { DefaultComponent } from 'src/app/templates/site/default/default.component';
 
 @NgModule({
-  declarations: [TemplateComponent],
+  declarations: [
+    DefaultComponent,
+  ],
   imports: [
     CommonModule,
     SiteRoutingModule
