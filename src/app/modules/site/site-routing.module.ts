@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DefaultComponent } from 'src/app/templates/site/default/default.component';
+import { DefaultTemplate } from 'src/app/templates/site/default/default.template';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: DefaultComponent,
+    component: DefaultTemplate,
     children: [
       {
         path: '',
