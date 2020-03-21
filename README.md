@@ -1,27 +1,46 @@
 # Angular Folder Structure
+> Highly scalable folder structure for your Angular projects
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+Save time thinking about your project folder structure and focus on what's important for your clients: finishing the project on time.
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Fork this repository to start using it.
 
-## Code scaffolding
+1. Install npm packages: ```npm install```
+2. Run ```ng serve``` for a dev server
+3. Navigate to http://localhost:4200/
+4. The app will automatically reload if you change any of the source files
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Initial Configuration
 
-## Build
+Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
+This is the section where you would document those requirements.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Developing
 
-## Running unit tests
+This project uses [commitlint](https://github.com/conventional-changelog/commitlint) to check if the commits messages meet the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The commit message pattern:
 
-## Running end-to-end tests
+```
+type(scope?): subject  #scope is optional
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Types list:
 
-## Further help
+* **feat**:  Adds a new feature
+* **fix**: Solves a bug
+* **chore**: Other changes that don't modify src or test files
+* **docs**: Adds or alters documentation
+* **style**: Improves formatting, white-space
+* **refactor**: Rewrites code without feature, performance or bug changes
+* **perf**: Improves performance
+* **test**: Adds or modifies tests
+* **build**: Affects the build system or external dependencies
+* **ci**: Changes CI configuration files and scripts
+* **revert**: Reverts a previous commit
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Licensing
+
+The code in this project is licensed under MIT license.
