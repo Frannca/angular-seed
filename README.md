@@ -12,6 +12,21 @@ Fork this repository to start using it.
 3. Navigate to http://localhost:4200/
 4. The app will automatically reload if you change any of the source files
 
+## Directory tree structure
+
+```markdown
+app/
+├── components/
+├── directives/
+├── guards/
+├── models/
+├── modules/
+├── pages/
+├── pipes/
+├── services/
+└── templates/
+```
+
 ## Usage
 
 The app structure was designed to make it easy to maintain web projects.
