@@ -14,6 +14,8 @@ Fork this repository to start using it.
 
 ## Directory tree structure
 
+The app structure was designed to make it easy to maintain web projects.
+
 ```markdown
 app/
 ├── components/
@@ -29,7 +31,7 @@ app/
 
 ## Usage
 
-The app structure was designed to make it easy to maintain web projects.
+Each folder supports the Angular CLI to quickly generate the files needed.
 
 ### Components
 
