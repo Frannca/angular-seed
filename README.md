@@ -1,7 +1,7 @@
 # Angular Folder Structure
 > Highly scalable folder structure for your Angular projects
 
-Save time thinking about your project folder structure and focus on what's important for your clients: finishing the project on time.
+Save time thinking about your project folder structure and focus on what is important for your clients: finishing the project on time.
 
 ## Getting started
 
@@ -20,7 +20,7 @@ The app structure was designed to make it easy to maintain web projects.
 
 All components that are not a `page` or `template`, should be placed inside the `components` folder.
 
-```
+```markdown
 app/
 ├── components/
 │   └── example/
@@ -31,11 +31,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g component components/COMPONENT_NAME
+```
+
 ### Directives
 
 Place all directives inside the `directives` folder.
 
-```
+```markdown
 app/
 ├── directives/
 │   ├── example.directive.spec.ts
@@ -43,11 +49,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g directive directives/DIRECTIVE_NAME
+```
+
 ### Guards
 
 Place all guards inside the `guards` folder.
 
-```
+```markdown
 app/
 ├── guards/
 │   ├── example.guard.spec
@@ -55,22 +67,34 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g guard guards/GUARD_NAME
+```
+
 ### Models
 
 Place all models insite the `models` folder.
 
-```
+```markdown
 app/
 ├── models/
 │   └── example.guard.ts
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g class models/MODEL_NAME --skipTests=true --type=model
+```
+
 ### Modules
 
 Place all modules inside the `modules` folder. Each module should be placed inside its respective folder with the module itself and the routing module.
 
-```
+```markdown
 app/
 ├── modules/
 │   ├── admin/
@@ -88,11 +112,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g module modules/MODULE_NAME --routing
+```
+
 ### Pages
 
 Place all pages inside the `pages` folder. A page is a specific component that represents a site page. Besides that, each page should be inside its respective scope: admin, site.
 
-```
+```markdown
 app/
 ├── pages/
 │   ├── admin/
@@ -110,11 +140,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g component pages/SCOPE/PAGE_NAME --type=page
+```
+
 ### Pipes
 
 Place all pipes inside the `pipes` folder.
 
-```
+```markdown
 app/
 ├── pipes/
 │   ├── example.pipe.spec.ts
@@ -122,11 +158,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g pipe pipes/PIPE_NAME
+```
+
 ### Services
 
 Place all services inside the `services` folder.
 
-```
+```markdown
 app/
 ├── services/
 │   ├── core/
@@ -137,11 +179,17 @@ app/
 ...
 ```
 
+Angular CLI command:
+
+```markdown
+ng g service services/SERVICE_NAME
+```
+
 ### Templates
 
 Place all templates inside the `templates` folder. A template is a specific component that represents a site template. Besides that, each template should be inside its respective scope: admin, site.
 
-```
+```markdown
 app/
 ├── templates/
 │   ├── admin/
@@ -157,6 +205,12 @@ app/
 │   │       ├── default.template.spec.ts
 │   │       └── default.template.ts
 ...
+```
+
+Angular CLI command:
+
+```markdown
+ng g component templates/SCOPE/TEMPLATE_NAME --type=template
 ```
 
 ## Developing
