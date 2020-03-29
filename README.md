@@ -12,10 +12,78 @@ Fork this repository to start using it.
 3. Navigate to http://localhost:4200/
 4. The app will automatically reload if you change any of the source files
 
-### Initial Configuration
+## Usage
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+src/
+└── app/
+    ├── components/
+    │   └── example/
+    │       ├── example.component.html
+    │       ├── example.component.scss
+    │       ├── example.component.spec.ts
+    │       └── example.component.ts
+    ├── directives/
+    │   ├── example.directive.spec.ts
+    │   └── example.directive.ts
+    ├── guards/
+    │   ├── example.guard.spec
+    │   └── example.guard.ts
+    ├── models/
+    │   └── example.guard.ts
+    ├── modules/
+    │   ├── admin/
+    │   │   ├── admin-routing.module.ts
+    │   │   └── admin.module.ts
+    │   ├── dashboard/
+    │   │   ├── dashboard-routing.module.ts
+    │   │   └── dashboard.module.ts
+    │   ├── home/
+    │   │   ├── home-routing.module.ts
+    │   │   └── home.module.ts
+    │   └── site/
+    │       ├── site-routing.module.ts
+    │       └── site.module.ts
+    ├── pages/
+    │   ├── admin/
+    │   │   └── dashboard/
+    │   │       ├── dashboard.page.html
+    │   │       ├── dashboard.page.scss
+    │   │       ├── dashboard.page.spec.ts
+    │   │       └── dashboard.page.ts
+    │   ├── site/
+    │   │   └── home/
+    │   │       ├── home.page.html
+    │   │       ├── home.page.scss
+    │   │       ├── home.page.spec.ts
+    │   │       └── home.page.ts
+    ├── pipes/
+    │   ├── example.pipe.spec.ts
+    │   └── example.pipe.ts
+    ├── services/
+    │   ├── core/
+    │   │   ├── http-error-handler.service.spec.ts
+    │   │   └── http-error-handler.service.ts
+    │   ├── example.service.spec.ts
+    │   └── example.service.ts
+    ├── templates/
+    │   ├── admin/
+    │   │   └── default/
+    │   │       ├── default.template.html
+    │   │       ├── default.template.scss
+    │   │       ├── default.template.spec.ts
+    │   │       └── default.template.ts
+    │   └── site/
+    │   │   └── default/
+    │   │       ├── default.template.html
+    │   │       ├── default.template.scss
+    │   │       ├── default.template.spec.ts
+    │   │       └── default.template.ts
+    ├── app-routing.module.ts
+    ├── app.component.html
+    ├── app.component.scss
+    ├── app.component.spec.ts
+    ├── app.component.ts
+    └── app.module.ts
 
 ## Developing
 
