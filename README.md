@@ -20,6 +20,17 @@ The app structure was designed to make it easy to maintain web projects.
 
 All components that are not a `page` or `template`, should be placed inside the `components` folder.
 
+```
+app/
+├── components/
+│   └── example/
+│       ├── example.component.html
+│       ├── example.component.scss
+│       ├── example.component.spec.ts
+│       └── example.component.ts
+...
+```
+
 ### Directives
 
 Place all directives inside the `directives` folder.
