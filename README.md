@@ -14,6 +14,7 @@ Fork this repository to start using it.
 
 ## Usage
 
+```
 src/
 └── app/
     ├── components/
@@ -84,6 +85,43 @@ src/
     ├── app.component.spec.ts
     ├── app.component.ts
     └── app.module.ts
+```
+
+### Components
+
+All components that are not a `page` or `template`, should be placed inside the `components` folder.
+
+### Directives
+
+Place all directives inside the `directives` folder.
+
+### Guards
+
+Place all guards inside the `guards` folder.
+
+## Models
+
+Place all models insite the `models` folder.
+
+### Modules
+
+Place all modules inside the `modules` folder. Each module should be placed inside its respective folder with the module itself and the routing module.
+
+### Pages
+
+Place all pages inside the `pages` folder. A page is a specific component that represents a site page. Besides that, each page should be inside its respective scope: admin, site.
+
+### Pipes
+
+Place all pipes inside the `pipes` folder.
+
+### Services
+
+Place all services inside the `services` folder.
+
+### Templates
+
+Place all templates inside the `templates` folder. A template is a specific component that represents a site template. Besides that, each template should be inside its respective scope: admin, site.
 
 ## Developing
 
