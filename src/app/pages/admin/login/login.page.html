@@ -1,1 +1,66 @@
-<p>login works!</p>
+<div
+  fxFlexFill
+  fxLayout
+  fxLayoutAlign="center">
+
+  <form
+    fxFlex.gt-xs="1 1 400px"
+    fxFlex.lt-sm="100"
+    fxLayout="column"
+    fxLayoutAlign="center">
+
+    <mat-card fxLayout="column">
+      <div fxLayoutAlign="center">
+        <h2>Login</h2>
+      </div>
+
+      <mat-form-field
+        fxFlex
+        appearance="outline">
+
+        <mat-label>E-mail</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [type]="passwordInputType">
+
+        <button
+          mat-icon-button
+          matSuffix
+          type="button"
+          (click)="togglePasswordVisibility()"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hidePassword">
+
+          <mat-icon>{{ passwordIconType }}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <div
+        fxLayout
+        fxLayoutAlign="end"
+        fxLayoutGap="16px">
+
+        <button
+          color="primary"
+          fxFlex="50"
+          mat-button>
+
+          Register
+        </button>
+
+        <button
+          color="primary"
+          fxFlex="50"
+          mat-flat-button>
+
+          Sign in
+        </button>
+      </div>
+    </mat-card>
+  </form>
+</div>
