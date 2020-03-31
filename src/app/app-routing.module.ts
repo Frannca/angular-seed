@@ -4,6 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'login',
+    redirectTo: 'admin/authentication/login',
+    pathMatch: 'full'
+  },
+  {
     path: '',
     loadChildren: () => import('./modules/site/site.module').then(mod => mod.SiteModule),
   },
