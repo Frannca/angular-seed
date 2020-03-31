@@ -10,3 +10,11 @@ input:-webkit-autofill:active  {
     box-shadow: 0 0 0 30px white inset !important;
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
+.container {
+  padding: 24px;
+
+  &--mobile {
+
+  }
+}
