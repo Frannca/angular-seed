@@ -8,6 +8,7 @@ import { registerLocaleData } from '@angular/common';
 
 import localePt from '@angular/common/locales/pt';
 import { HttpErrorHandlerService } from './services/core/http-error-handler.service';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePt, 'pt-Br');
 
@@ -18,7 +19,8 @@ registerLocaleData(localePt, 'pt-Br');
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [
     HttpErrorHandlerService,

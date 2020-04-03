@@ -9,7 +9,9 @@
     fxFlex.gt-xs="1 1 400px"
     fxFlex.lt-sm="100"
     fxLayout="column"
-    fxLayoutAlign="center">
+    fxLayoutAlign="center"
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()">
 
     <mat-card fxLayout="column">
       <div fxLayoutAlign="center">
@@ -21,14 +23,20 @@
         appearance="outline">
 
         <mat-label>E-mail</mat-label>
-        <input matInput>
+        <input
+          matInput
+          formControlName="email"
+          required>
+        <mat-error>{{ getErrorMessage('email') }}</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
         <input
           matInput
-          [type]="passwordInputType">
+          [type]="passwordInputType"
+          formControlName="password"
+          required>
 
         <button
           mat-icon-button
@@ -40,6 +48,7 @@
 
           <mat-icon>{{ passwordIconType }}</mat-icon>
         </button>
+        <mat-error>{{ getErrorMessage('password') }}</mat-error>
       </mat-form-field>
 
       <div
@@ -52,7 +61,7 @@
           fxFlex="50"
           mat-button>
 
-          Register
+          Create account
         </button>
 
         <button
@@ -60,7 +69,7 @@
           fxFlex="50"
           mat-flat-button>
 
-          Sign in
+          Log in
         </button>
       </div>
     </mat-card>

@@ -10,6 +10,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 
 @NgModule({
@@ -21,11 +23,15 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     AuthenticationRoutingModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
     MatButtonModule
+  ],
+  providers: [
+    AuthenticationService
   ]
 })
 export class AuthenticationModule { }

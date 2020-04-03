@@ -19,7 +19,7 @@ export class AuthenticationGuard implements CanActivate {
   }
 
   checkLogin(url: string): boolean {
-    if (this.authenticationService.isLoggedIn) { return true; }
+    if (this.authenticationService.getToken()) { return true; }
 
     this.authenticationService.redirectUrl = url;
 
