@@ -13,6 +13,13 @@
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()">
 
+    <div class="frn-back-button">
+      <button [routerLink]="['/']" mat-button>
+        <mat-icon>arrow_back</mat-icon>
+        Back to site
+      </button>
+    </div>
+
     <mat-card fxLayout="column">
       <div fxLayoutAlign="center">
         <h2>Login</h2>
@@ -65,5 +72,6 @@
         </button>
       </div>
     </mat-card>
+
   </form>
 </div>

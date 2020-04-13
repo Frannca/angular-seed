@@ -5,6 +5,7 @@ import { SiteRoutingModule } from './site-routing.module';
 import { DefaultTemplate } from 'src/app/templates/site/default/default.template';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     CommonModule,
     SiteRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule
   ]
 })
 export class SiteModule { }

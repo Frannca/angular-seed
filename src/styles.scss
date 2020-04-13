@@ -1,7 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import './scss/themes/frannca/frannca.scss';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -13,8 +13,18 @@ input:-webkit-autofill:active  {
 
 .container {
   padding: 24px;
+}
 
-  &--mobile {
+.frn-toolbar-button {
+  &--primary {
+    &:hover {
+      background-color: $primary-600 !important;
+    }
+  }
+}
 
+button {
+  mat-icon {
+    font-size: 1.7em !important;
   }
 }
