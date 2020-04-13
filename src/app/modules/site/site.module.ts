@@ -6,6 +6,7 @@ import { DefaultTemplate } from 'src/app/templates/site/default/default.template
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     SiteRoutingModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule
   ]
 })
 export class SiteModule { }
